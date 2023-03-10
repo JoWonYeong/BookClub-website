@@ -2,8 +2,6 @@
 
 BookClub website using HTML, CSS, Javascript
 
-web hosting: https://jowonyeong.github.io/BookClub-website/
-
 추리소설동아리 보수
 
 1. 배치 모든 컴퓨터에서 동일하게 반응형으로
