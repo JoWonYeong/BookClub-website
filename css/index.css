@@ -1,12 +1,11 @@
-.nav_menu li h2 {
+.nav_menu li {
   padding-bottom: 8px;
-  /* border: 5px solid wheat; */
   box-sizing: border-box;
 }
 
-.nav_menu li h2:hover {
+.nav_menu li:hover {
   padding-bottom: 5px;
-  border-bottom: 0.3rem solid #e2f1f8;
+  /* border-bottom: 0.3rem solid #e2f1f8; */
   transition: padding-bottom 0s, border-bottom 0.2s ease;
 }
 
