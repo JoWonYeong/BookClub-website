@@ -73,6 +73,30 @@ h2 {
   font-weight: bold;
 }
 
+.footbar {
+  padding: 2.5rem 2rem;
+  background-color: #b0bec5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot_info {
+  color: #494949;
+  font-size: clamp(1.4rem, 18/100 * 10vw, 1.8rem);
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 /* 1550px ~ */
 /* .navbar 패딩 늘리기, .nav_menu li 패딩 늘리기 */
 @media (min-width: 1500px) {
@@ -125,28 +149,13 @@ h2 {
     font-weight: lighter;
     border-bottom: 0.1rem solid #e2f1f8;
   }
-}
 
-.footbar {
-  height: 70px;
-  background-color: #b0bec5;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .footbar {
+    padding: 1rem;
+    flex-direction: column;
+  }
 
-.foot_info {
-  color: #494949;
-  font-size: 18px;
-}
-
-.a11y-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  .foot_info:not(:first-child) {
+    padding-top: 0.5rem;
+  }
 }
