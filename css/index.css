@@ -1,11 +1,13 @@
-.nav_menu li {
+.nav_menu li h2 {
   padding-bottom: 8px;
+  /* border: 5px solid wheat; */
+  box-sizing: border-box;
 }
 
-.nav_menu li:hover {
+.nav_menu li h2:hover {
   padding-bottom: 5px;
-  border-bottom: 3px solid #e2f1f8;
-  transition: border-bottom 0.3s ease;
+  border-bottom: 0.3rem solid #e2f1f8;
+  transition: padding-bottom 0s, border-bottom 0.2s ease;
 }
 
 .contents {

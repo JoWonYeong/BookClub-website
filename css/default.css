@@ -8,6 +8,12 @@ html {
   background-color: #90a4ae;
 }
 
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .top {
   width: 100%;
   height: 4vh;
@@ -40,16 +46,16 @@ html {
   list-style: none;
 }
 
-.nav_menu li {
+.nav_menu li h2 {
   font-size: clamp(1.7rem, 30/100 * 10vw, 3rem);
   font-weight: 500;
   padding: 0 1.5rem 0.5rem 1.5rem;
   white-space: nowrap;
 }
 
-.nav_menu li:hover {
+.nav_menu li h2:hover {
   border-bottom: 0.3rem solid #e2f1f8;
-  transition: 0.3s ease;
+  transition: border-bottom 0.2s ease;
 }
 
 .nav_home a,
@@ -69,7 +75,7 @@ html {
   .navbar {
     padding: 7vh 6rem 0 6rem;
   }
-  .nav_menu li {
+  .nav_menu li h2 {
     padding: 0 2rem 0.5rem 2rem;
   }
 }
@@ -82,7 +88,7 @@ html {
   .navbar {
     padding: 7vh 1rem 0 1.3rem;
   }
-  .nav_menu li {
+  .nav_menu li h2 {
     padding: 0 0.7rem 0.5rem 0.7rem;
   }
 }
@@ -102,7 +108,8 @@ html {
     flex-direction: column;
     align-items: center;
   }
-  .nav_menu li {
+  .nav_menu li h2 {
+    font-weight: lighter;
     margin-top: 0.7rem;
     width: 13rem;
     height: 4vh;
@@ -127,4 +134,15 @@ html {
 .foot_info {
   color: #494949;
   font-size: 18px;
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
