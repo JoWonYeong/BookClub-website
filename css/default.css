@@ -1,74 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    background-color: #90a4ae;
+  font-size: 10px;
+  background-color: #90a4ae;
 }
 
 .top {
-    height: 30px;
-    background-color: #62757f;
+  width: 100%;
+  height: 4vh;
+  background-color: #62757f;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #494949;
-    align-items: flex-end;
-    padding: 50px 30px 0px 40px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 7vh 3rem 0 3rem;
+  color: white;
+  background-color: #494949;
 }
 
 .nav_home {
-    font-size: 48px;
-    padding-bottom: 5px;
+  padding-bottom: 0.5rem;
+  font-size: clamp(2.5rem, 47/100 * 10vw, 4.7rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav_home i {
-    font-size: 70px;
+  font-size: clamp(2.5rem, 63/100 * 10vw, 6.3rem);
 }
 
 .nav_menu {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .nav_menu li {
-    font-size: 29px;
-    font-weight: 500;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-bottom: 5px;
+  font-size: clamp(1.7rem, 30/100 * 10vw, 3rem);
+  font-weight: 500;
+  padding: 0 1.5rem 0.5rem 1.5rem;
+  white-space: nowrap;
 }
 
 .nav_menu li:hover {
-    border-bottom: 3px solid #e2f1f8;
-    transition: 0.3s ease;
+  border-bottom: 0.3rem solid #e2f1f8;
+  transition: 0.3s ease;
 }
 
 .nav_home a,
 .nav_menu a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #thisPage {
-    font-weight: 700;
-    border-bottom: 3px solid #e2f1f8;
+  font-weight: 700;
+  border-bottom: 0.3rem solid #e2f1f8;
 }
 
+/* 1550px ~ */
+/* .navbar 패딩 늘리기, .nav_menu li 패딩 늘리기 */
+@media (min-width: 1500px) {
+  .navbar {
+    padding: 7vh 6rem 0 6rem;
+  }
+  .nav_menu li {
+    padding: 0 2rem 0.5rem 2rem;
+  }
+}
+
+/* 1000px ~ 1550px : 기본값 */
+
+/* 720px ~ 1000px*/
+/* .navbar 패딩 줄이기, .nav_menu li 패딩 줄이기 */
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 7vh 1rem 0 1.3rem;
+  }
+  .nav_menu li {
+    padding: 0 0.7rem 0.5rem 0.7rem;
+  }
+}
+
+/* ~ 720px 
+/* navbar 세로정렬 */
+@media (max-width: 720px) {
+  .top {
+    height: 2vh;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+  .nav_menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_menu li {
+    margin-top: 0.7rem;
+    width: 13rem;
+    height: 4vh;
+    line-height: 3.5vh;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #thisPage {
+    font-weight: lighter;
+    border-bottom: 0.1rem solid #e2f1f8;
+  }
+}
 
 .footbar {
-    height: 70px;
-    background-color: #b0bec5;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 70px;
+  background-color: #b0bec5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .foot_info {
-    color: #494949;
-    font-size: 18px;
+  color: #494949;
+  font-size: 18px;
 }

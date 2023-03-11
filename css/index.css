@@ -1,62 +1,70 @@
 .nav_menu li {
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .nav_menu li:hover {
-    padding-bottom: 5px;
-    border-bottom: 3px solid #e2f1f8;
-    transition: border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #e2f1f8;
+  transition: border-bottom 0.3s ease;
 }
-
 
 .contents {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* 정답은 아니고 일단은 나의 생각
+.window에 미디어쿼리 줘서 일정 크기(아마 1000px) 이상이면 1000px,
+그 이하면 width : 100% 주는거 어떰?? */
 
 .window {
-    width: 1000px;
-    height: 500px;
-    position: relative;
-    background-color: white;
-    overflow: hidden;
+  /* width: 1000px; */
+  width: 90%;
+  height: 500px;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .window {
+    width: 100%;
+  }
 }
 
 .front {
-    color: #494949;
-    text-align: center;
-    font-size: xx-large;
-    font-weight: 600;
-    width: 900px;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  color: #494949;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  width: 900px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .back {
-    margin: 0px;
-    padding: 0px;
-    width: 3020px;
-    /* position: absolute; */
-    opacity: 0.2;
+  margin: 0px;
+  padding: 0px;
+  width: 3020px;
+  /* position: absolute; */
+  opacity: 0.2;
 }
 
-
 .one {
-    position: absolute;
-    left: -1000px;
+  position: absolute;
+  left: -1000px;
 }
 
 .two {
-    position: absolute;
-    left: 0px;
+  position: absolute;
+  left: 0px;
 }
 
 .three {
-    position: absolute;
-    left: 1000px;
+  position: absolute;
+  left: 1000px;
 }
