@@ -123,6 +123,7 @@ h2 {
 
 /* ~ 720px 
 /* navbar 세로정렬 */
+/* footer 세로정렬 */
 @media (max-width: 720px) {
   .top {
     height: 2vh;
