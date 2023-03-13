@@ -22,9 +22,9 @@
 .window {
   /* width: 1000px; */
   width: 90%;
-  height: 500px;
+  height: 80vh;
   position: relative;
-  background-color: white;
+  /* background-color: white; */
   overflow: hidden;
 }
 
@@ -56,9 +56,13 @@
 .back {
   margin: 0px;
   padding: 0px;
-  width: 3020px;
+  /* width: 3020px; */
   /* position: absolute; */
 }
+
+/* 사진 슬라이드 위치 */
+/* one    two     three */
+/* around center  around */
 
 .one {
   position: absolute;
@@ -73,4 +77,15 @@
 .three {
   position: absolute;
   left: 1000px;
+}
+
+/* 중간사진 width 딱 맞춰줌 */
+.center {
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.around {
+  z-index: -100;
 }
