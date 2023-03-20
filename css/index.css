@@ -87,7 +87,7 @@
   font-size: clamp(2rem, 30/100 * 10vw, 3rem);
 }
 
-/* 720px 이하면 화면에 slider 꽉 차게 */
+/* 720px 이하면 slider 안에 글자 위치 변경 */
 @media (max-width: 720px) {
   .slider-info {
     top: 30%;
