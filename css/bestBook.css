@@ -62,6 +62,12 @@
   transition: all 0.3s ease;
 }
 
+@media (max-width: 1200px) {
+  .window {
+    width: 70%;
+  }
+}
+
 @media (max-width: 720px) {
   .contents {
     width: 100%;

@@ -76,6 +76,7 @@ h2 {
 .contents {
   width: 70%;
   margin: 10vh auto;
+  min-height: 55vh;
 }
 
 .footbar {
@@ -115,8 +116,6 @@ h2 {
     padding: 0 2rem 0.5rem 2rem;
   }
 }
-
-/* 1000px ~ 1550px : 기본값 */
 
 /* 720px ~ 1000px*/
 /* .navbar 패딩 줄이기, .nav_menu li 패딩 줄이기 */
@@ -172,7 +171,7 @@ h2 {
 /* 1200px 이하면 contents의 width 줄여줌 */
 @media (max-width: 1200px) {
   .contents {
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -183,5 +182,6 @@ h2 {
     width: 93%;
     margin-top: 60px;
     margin-bottom: 60px;
+    min-height: 0;
   }
 }
