@@ -73,6 +73,11 @@ h2 {
   font-weight: bold;
 }
 
+.contents {
+  width: 80%;
+  margin: 10vh auto;
+}
+
 .footbar {
   padding: 2.5rem 2rem;
   background-color: #b0bec5;
@@ -158,5 +163,22 @@ h2 {
 
   .foot_info:not(:first-child) {
     padding-top: 0.5rem;
+  }
+}
+
+/* 1200px 이하면 contents의 width 줄여줌 */
+@media (max-width: 1200px) {
+  .contents {
+    width: 90%;
+  }
+}
+
+/* 720px 이하면 section의 width 줄여줌 + 여러 marign, padding 수정*/
+/* 이미지 세로정렬 */
+@media (max-width: 720px) {
+  .contents {
+    width: 93%;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }

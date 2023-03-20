@@ -1,7 +1,7 @@
-.contents {
+/* .contents {
   width: 80%;
   margin: 10vh auto;
-}
+} */
 
 .introduction,
 .location {
@@ -11,7 +11,7 @@
 .intro_title,
 .loc_title {
   color: white;
-  font-size: clamp(2.7rem, 38/100 * 10vw, 3.8rem);
+  font-size: clamp(2.7rem, 35/100 * 10vw, 3.5rem);
   margin-bottom: 20px;
 }
 
@@ -24,7 +24,7 @@
 
 .intro_about {
   color: #494949;
-  font-size: clamp(2.2rem, 28/100 * 10vw, 2.8rem);
+  font-size: clamp(2rem, 25/100 * 10vw, 2.5rem);
 }
 
 .intro_img {
@@ -47,11 +47,8 @@
   }
 }
 
-/* 1200px 이하면 section의 width 줄여줌 */
+/* 1200px 이하면 contents의 width 줄여줌 */
 @media (max-width: 1200px) {
-  .contents {
-    width: 90%;
-  }
   .intro_img img {
     width: 30%;
   }
@@ -60,11 +57,6 @@
 /* 720px 이하면 section의 width 줄여줌 + 여러 marign, padding 수정*/
 /* 이미지 세로정렬 */
 @media (max-width: 720px) {
-  .contents {
-    width: 93%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
   .intro_img {
     flex-direction: column;
     align-items: center;
