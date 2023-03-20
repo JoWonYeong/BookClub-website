@@ -74,7 +74,7 @@ h2 {
 }
 
 .contents {
-  width: 80%;
+  width: 70%;
   margin: 10vh auto;
 }
 
@@ -105,6 +105,9 @@ h2 {
 /* 1550px ~ */
 /* .navbar 패딩 늘리기, .nav_menu li 패딩 늘리기 */
 @media (min-width: 1500px) {
+  .contents {
+    width: 60%;
+  }
   .navbar {
     padding: 7vh 6rem 0 6rem;
   }
