@@ -9,7 +9,8 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-size: inherit;
   margin: 0;
   padding: 0;
@@ -103,12 +104,11 @@ h2 {
   position: absolute;
 }
 
-/* 1550px ~ */
+/* ================== Navbar media query ================== */
+
+/* 1500px ~ */
 /* .navbar 패딩 늘리기, .nav_menu li 패딩 늘리기 */
 @media (min-width: 1500px) {
-  .contents {
-    width: 60%;
-  }
   .navbar {
     padding: 7vh 6rem 0 6rem;
   }
@@ -117,7 +117,7 @@ h2 {
   }
 }
 
-/* 720px ~ 1000px*/
+/* 768px ~ 1200px*/
 /* .navbar 패딩 줄이기, .nav_menu li 패딩 줄이기 */
 @media (max-width: 1200px) {
   .navbar {
@@ -128,10 +128,11 @@ h2 {
   }
 }
 
-/* ~ 720px 
+/* ================== Navbar & Footer media query ================== */
+/* ~ 768px 
 /* navbar 세로정렬 */
 /* footer 세로정렬 */
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .top {
     height: 2vh;
   }
@@ -168,16 +169,17 @@ h2 {
   }
 }
 
-/* 1200px 이하면 contents의 width 줄여줌 */
-@media (max-width: 1200px) {
+/* ================== Contents media query ================== */
+
+/* contents 사이즈 수정 */
+/* 1500px 이상이면 전체의 60% */
+@media (min-width: 1500px) {
   .contents {
-    width: 85%;
+    width: 60%;
   }
 }
-
-/* 720px 이하면 section의 width 줄여줌 + 여러 marign, padding 수정*/
-/* 이미지 세로정렬 */
-@media (max-width: 720px) {
+/* 768px 미만이면 전체의 93% */
+@media (max-width: 768px) {
   .contents {
     width: 93%;
     margin-top: 60px;

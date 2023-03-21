@@ -32,10 +32,10 @@
     </h1>
     <ul class="nav_menu">
       <li>
-        <h2><a href="./introduceClub.html">모임소개</a></h2>
+        <a href="./introduceClub.html">모임소개</a>
       </li>
       <li>
-        <h2><a href="./bestBook.html">이달의 책</a></h2>
+        <a href="./bestBook.html">이달의 책</a>
       </li>
       <li id="thisPage">
         <h2><a href="./rentalBook.html">책 대여</a></h2>
@@ -45,14 +45,15 @@
 
   <div class="contents">
     <div class="info">
-      <div class="info_title">회원정보 입력</div>
-      <hr />
+      <h3 class="info_title"><strong class="line">회원정보 입력</strong>
+      </h3>
+
       <form class="info_set" action="">
-        <p>이름 <input type="text" class="set" id="setName" /></p>
-        <p>회원번호 <input type="text" class="set" id="setNumber" /></p>
-        <p>
-          대여 날짜
-          <select class="setMonth">
+        <input class="input-info" type="text" id="setName" placeholder="이름" />
+        <input class="input-info" type="number" id="setNumber" placeholder="회원번호" />
+        <div>
+          <span>대여 날짜</span>
+          <select class="select-month">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -66,13 +67,13 @@
             <option value="11">11</option>
             <option value="12">12</option>
           </select>
-          월 <input type="text" class="setDate" /> 일
-        </p>
-        <div class="send">
-          <input type="button" value="예약" id="submit1" />
-          <input type="reset" value="초기화" />
+          <span>월</span>
+          <input type="number" class="input-date" />
+          <span>일</span>
         </div>
-        <div>책은 3권까지 대여 가능하고, 대여기간은 2주일 입니다.</div>
+        <p>책은 <strong>3권</strong>까지 대여 가능하고, 대여기간은 <strong>2주일</strong> 입니다.</p>
+        <button class="btn-black-submit" type="button" id="submit1">예약</button>
+        <button class="btn-black-submit" type="reset">초기화</button>
       </form>
     </div>
 
