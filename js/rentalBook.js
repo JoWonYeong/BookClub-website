@@ -4,12 +4,16 @@ var $month;
 var $date;
 
 $(document).ready(function () {
+  formSet();
   clickEvent();
 });
 
 function clickEvent() {
   $('#submit1').click(function () {
-    info();
+    $name = $('input#setName').val();
+    $number = $('input#setNumber').val();
+    $month = $('.select-month option:selected').val();
+    $date = $('.select-date option:selected').val();
     $('.info').hide();
     $('.rent').fadeIn(500);
   });
@@ -28,14 +32,38 @@ function clickEvent() {
   });
 }
 
-function info() {
-  $name = $('input#setName').val();
-  $number = $('input#setNumber').val();
-  $month = $('.select-month option:selected').val();
-  $date = $('input.input-date').val();
-}
-
 function bookCount() {
   var count = $('input:checkbox[name=book]:checked').length;
   return count;
+}
+
+function formSet() {
+  const select_month = document.querySelector('.select-month');
+  const select_date = document.querySelector('.select-date');
+  makeOptions(select_month, 12);
+
+  select_month.addEventListener('click', () => {
+    while (select_date.firstChild) {
+      select_date.removeChild(select_date.firstChild);
+    }
+
+    let month = select_month.options[select_month.selectedIndex].value;
+
+    if ([1, 3, 5, 7, 8, 10, 12].includes(parseInt(month))) {
+      makeOptions(select_date, 31);
+    } else if (parseInt(month) == 2) {
+      makeOptions(select_date, 28);
+    } else {
+      makeOptions(select_date, 30);
+    }
+  });
+}
+
+function makeOptions(element, number) {
+  for (let i = 1; i <= number; i++) {
+    let option = document.createElement('option');
+    option.innerHTML = i;
+    option.setAttribute('value', i);
+    element.appendChild(option);
+  }
 }

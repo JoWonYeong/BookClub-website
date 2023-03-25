@@ -1,35 +1,19 @@
-.contents {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column;*/
-}
-
 .info {
   color: #494949;
-  /* width: 500px; */
-  width: 70%;
-  min-width: 500px;
+  width: 500px;
   margin: auto;
-  /* height: 300px; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
 }
 
 .info_title {
-  /* background-color: #dde4e7; */
   font-size: 28px;
-  /* padding-top: 12px;
-  padding-bottom: 12px; */
   text-align: center;
-  /* border-top-left-radius: 20px; */
-  /* border-top-right-radius: 20px; */
+  margin-bottom: 30px;
+  color: white;
 }
 
 .line {
   font-weight: 500;
-  box-shadow: inset 0 -0.6em rgba(221, 228, 231, 0.3);
+  box-shadow: inset 0 -0.3em rgba(221, 228, 231, 0.3);
   border-bottom: 2px solid #dde4e7;
 }
 
@@ -38,16 +22,12 @@
 .info_set {
   background-color: #dde4e7;
   text-align: center;
-  padding: 20px;
-  /* line-height: 40px; */
-  /* border-bottom-left-radius: 20px; */
-  /* border-bottom-right-radius: 20px; */
+  padding: 30px;
 }
 
 .input-info {
   width: 100%;
   height: 48px;
-  /* margin-top: 8px; */
   padding: 0 16px;
   box-sizing: border-box;
   border: none;
@@ -55,6 +35,7 @@
   transition: box-shadow 0.2s ease;
   border-radius: 4px 4px 0 0;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .input-info:hover {
@@ -67,7 +48,36 @@
   border-radius: 4px;
 }
 
+[class^='select'] {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 1px 0 0 #677880;
+  padding: 0 14px;
+  appearance: none;
+  background: white url('./../images/select.svg') no-repeat calc(100% - 15px) /
+    1em;
+  transition: box-shadow 0.2s ease;
+}
+
+[class^='select']:hover {
+  box-shadow: 0 2px 0 0 #62757f;
+}
+[class^='select']:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #62757f;
+  border-radius: 4px;
+}
+
+.info_set span {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
 .btn-black-submit {
+  font-size: 16px;
   width: 100%;
   height: 48px;
   background-color: #494949;
@@ -76,11 +86,9 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
-.info_set > p {
-  font-size: 16px;
+.btn-black-submit:nth-child(5) {
+  margin-bottom: 15px;
 }
-
 /* ================== rent ================== */
 .rent {
   display: none;
