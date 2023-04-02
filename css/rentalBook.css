@@ -23,6 +23,7 @@
   background-color: #dde4e7;
   text-align: center;
   padding: 30px;
+  border-radius: 20px;
 }
 
 .input-info {
@@ -89,25 +90,57 @@
 .btn-black-submit:nth-child(5) {
   margin-bottom: 15px;
 }
+
 /* ================== rent ================== */
-.rent {
-  display: none;
+.rent-container {
   background-color: #e2f1f8;
-  color: #494949;
+  /* width: 100%; */
+  display: none;
+  padding: 30px;
   border-radius: 20px;
-  padding: 10px;
+}
+.rent {
+  /* width: 100%; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 24px;
+  /* justify-content: center; */
+  /* gap: 10px; */
+}
+.rent-book {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - (24px * 2)) / 3);
+  align-items: center;
+}
+.rent-book > img {
+  width: 55%;
 }
 
-.rent .title {
-  font-weight: 600;
-  font-size: large;
+.rent-book > .title {
+  color: #494949;
+  font-size: clamp(2rem, 23/100 * 10vw, 2.3rem);
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.rent img {
-  border: 2px solid white;
-  width: 150px;
-  height: 200px;
-  margin: 5px 10px;
+.rent-book > .content {
+  color: #494949;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0px 10px;
+  font-size: clamp(1.6rem, 18/100 * 10vw, 1.8rem);
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
 }
 
 /* 768px 미만이면 login form 이 contents 꽉 채우게 */
@@ -115,5 +148,23 @@
   .info {
     min-width: 0;
     width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .rent-book {
+    width: calc((100% - (24px * 1)) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .rent-book {
+    width: 100%;
+    margin: auto;
+  }
+  .rent-book > .content {
+    overflow: visible;
+    display: block;
+    padding: 10px;
   }
 }
