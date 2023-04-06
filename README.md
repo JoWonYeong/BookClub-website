@@ -6,4 +6,4 @@ BookClub website using HTML, CSS, Javascript
 
 web hosting: https://jowonyeong.github.io/BookClub-website/
 
-구현 영상: https://www.youtube.com/watch?v=cN5cvghchxA
+구현 영상: https://youtu.be/KsjveppOSno
