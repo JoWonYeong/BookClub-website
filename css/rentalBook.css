@@ -170,6 +170,9 @@
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
+  .contents {
+    width: 80%;
+  }
   .rent-book {
     width: calc((100% - (24px * 1)) / 2);
   }

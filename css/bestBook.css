@@ -12,12 +12,11 @@
   padding: 20px;
 }
 .window {
-  width: 50%;
+  width: 500px;
   position: relative;
 }
 
 .window img {
-  width: 100%;
   border-radius: 20px;
 }
 
@@ -63,22 +62,16 @@
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1200px) {
-  .window {
-    width: 70%;
-  }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .contents {
+    width: 100%;
+  }
+  .window img {
     width: 100%;
   }
   #prevBtn,
   #nextBtn {
     padding: 10px;
-  }
-  .window {
-    width: 90%;
   }
   .window_text {
     padding: 5px;
