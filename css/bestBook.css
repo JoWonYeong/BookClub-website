@@ -43,6 +43,7 @@
 }
 
 .text > strong {
+  font-weight: bold;
   display: block;
   margin-bottom: 50px;
   font-size: clamp(2rem, 30/100 * 10vw, 3rem);

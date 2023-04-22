@@ -101,7 +101,7 @@ let rent = document.querySelector('.rent');
   책_img.setAttribute('alt', a.title);
 
   // span.title 요소 만듦 (innerHTML = title)
-  let 책_title = document.createElement('span');
+  let 책_title = document.createElement('h3');
   책_title.classList.add('title');
   책_title.innerHTML = a.title;
 
