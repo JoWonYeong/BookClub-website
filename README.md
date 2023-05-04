@@ -1,4 +1,4 @@
-# 📗BookClub-website : UI 구현 위한 가상의 웹 페이지
+# 📗BookClub-website
 
 - 리팩토링 전 코드 : [before-maintenance 브랜치](https://github.com/JoWonYeong/BookClub-website/tree/before-maintenance)
 
